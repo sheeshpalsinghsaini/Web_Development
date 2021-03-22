@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script type="text/javascript">
+  // function getCity()
+  // {
+  // var refcity=document.getElementById("city");
+  // var refvalue=refcity.value;
+  // alert(refvalue);
+  // }
+
+  // function getcity()
+  // {
+  //   var refcities=document.getElementById("cities");
+  //   var all="";
+  //   var ind="";
+  //   for(i=0;i<refcities.length;i++){
+  //   if(refcities[i].selected==true)
+  //     {
+  //       all+=refcities[i].value+",";
+  //       ind+=refcities[i].index+",";
+  //     }
+  //
+  //   }
+  //   document.getElementById("showcity").innerHTML=all;
+  //   document.getElementById("showindex").innerHTML=ind;
+  // }
+  //
+  // function doDelete()
+  // {
+  //   var refcities=document.getElementById("cities");
+  //   var ind=refcities.selectedIndex;
+  //   // alert(ind);
+  //   refcities.remove(ind);
+  // }
+
+  </script>
+
+
+
+
+  <meta charset="utf-8">
+  <title>List Box and Combobox</title>
+</head>
+
+<body>
+  <center>
+    <h3>List and Combobox</h3>
+    City:
+    <select id="city" onchange="getCity();">
+      <option value="None">select</option>
+      <option value="Amroha">Amroha</option>
+      <option value="Aligar">Aligar</option>
+      <option value="Barali">Barali</option>
+      <option value="Banglaru">Banglaru</option>
+      <option value="Chandigar">Chandigar</option>
+      <option value="Dhanaura">Dhanaura</option>
+      <option value="Daheradun">Daheradun</option>
+
+    </select>
+    <!-- <input type="button" value="show" onclick="getCity();"> -->
+
+    <hr><hr>
+    <h3>ListBox</h3>
+    <select id="cities" multiple ondblclick="doDelete();">
+      <option value="None">select</option>
+      <option value="Amroha">Amroha</option>
+      <option value="Aligar">Aligar</option>
+      <option value="Barali">Barali</option>
+      <option value="Banglaru">Banglaru</option>
+      <option value="Chandigar">Chandigar</option>
+      <option value="Dhanaura">Dhanaura</option>
+      <option value="Daheradun">Daheradun</option>
+
+    </select>
+    <input type="button" value="showCity" onclick="getcity();">
+    <div id="showcity">
+      *
+
+    </div>
+    <div id="showindex">
+      *
+
+    </div>
+  </center>
+
+  <hr><hr>
+  <h3>Add item to Combobox</h3>
+  <input type="text" id="textname">
+  <input type="button" value="Add_item" onclick="add_item();">
+
+  <select>
+    <option>Select</option>
+
+  </select>
+
+
+  <script type="text/javascript">
+  function add_item()
+  {
+    var item=document.getElementById("textname");
+  }
+
+  </script>
+
+</body>
+
+</html>

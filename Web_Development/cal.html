@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Calculator</title>
+    <script type="text/javascript">
+      function dosum()
+      {
+        var a=document.x.A.value;
+        //alert(a);
+        var b=document.x.B.value;
+      //  alert(b);
+        var sum=parseFloat(a)+parseFloat(b)
+        document.x.result.value=sum;
+      }
+      function dosub()
+      {
+        var a=document.x.A.value;
+        var b=document.x.B.value;
+        var sub=parseFloat(a)-parseFloat(b);
+        document.x.result.value=sub;
+        // alert(a);
+        // alert(b);
+      }
+      function domul()
+      {
+        var a= document.x.A.value;
+        var b=document.x.B.value;
+        // alert(a);
+        // alert(b);
+        var mul=parseFloat(a)*parseFloat(b);
+        document.x.result.value=mul;
+      }
+
+      function khali()
+      {
+        document.x.A.value="";
+        document.x.B.value="";
+        document.x.result.value="";
+        //alert(34);
+      }
+
+    </script>
+  </head>
+  <body>
+    <center>
+      <form name="x">
+        <table>
+          <tr>
+            <th>Calculator</th>
+          </tr>
+          <tr>
+            <td>Enter First Number:</td>
+            <td><input type="text" name="A" autofocus></td>
+          </tr>
+          <tr>
+            <td>Enter Second Number:</td>
+            <td><input type="text" name="B"></td>
+          </tr>
+          <tr>
+            <td><input type="button"  value="Sum" onclick="dosum();">
+            <input type="button"  value="Sub" onclick="dosub();">
+            <input type="button"  value="Mul" onclick="domul();"></td>
+
+            <td><input type="text" name="result" readonly disabled></td>
+          </tr>
+          <tr>
+            <td><input type="button"  value="Clear" onclick="khali();">
+            <input type="reset"  value="Reset"></td>
+          </tr>
+        </table>
+
+      </form>
+      </center>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form in HTML</title>
+  </head>
+  <body>
+    <center>
+      <form>
+        <fieldset style="width:400px;">
+          <legend style="bcackground-color:yellow; padding:15px">Student's Information</legend>
+
+
+        <table width="400">
+          <tr>
+            <th>Web Form</th>
+          </tr>
+          <tr>
+            <td><label>Enter User Id</label></td>
+          </tr>
+          <tr>
+            <!-- maxlength,we can enter only max lenth character
+          placeholder is visible in box and disapper when we write something here -->
+            <td><input type="text" maxlength="20" placeholder="Enter User Id"></td>
+          </tr>
+          <tr>
+            <td><label>Enter Password</label></td>
+          </tr>
+          <tr>
+            <td><input type="password" placeholder="min 8 character"></td>
+          </tr>
+          <tr>
+            <td><label>Enter Mobile Number</label></td>
+          </tr>
+          <tr>
+            <td><input type="text" maxlength="10" placeholder="10 Digit Mobile Number"></td>
+          </tr>
+          <tr>
+            <td><label>Enter Date Of Birth</label></td>
+          </tr>
+          <tr>
+            <td><input type="date"></td>
+          </tr>
+          <tr>
+            <td><label>Enter Time of Birth</label></td>
+          </tr>
+          <tr>
+            <td><input type="time" name="" value=""><input type="datetime-local" name="" value=""></td>
+          </tr>
+          <tr>
+            <td><label>Enter color of your car</label></td>
+
+          </tr>
+          <tr>
+            <td><input type="color"></td>
+          </tr>
+          <tr>
+            <td><label>Select City(Combobox)</label></td>
+
+          </tr>
+          <tr>
+            <td>
+              <select >
+                <option>Amroha</option>
+                <option>Aligar</option>
+                <option>Bihar</option>
+                <option>Barali</option>
+                <option>chandigar</option>
+                <option>chandpur</option>
+                <option>Dhanaura</option>
+                <option>Dahradun</option>
+                <option>Gajrola</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Select Skills(List Box)</td>
+          </tr>
+          <tr>
+            <td><select multiple>
+              <option>C Language</option>
+              <option>C++</option>
+              <option>Python</option>
+              <option>Java</option>
+              <option>Web_Development</option>
+              <option>Android</option>
+              <option>Data Science</option>
+              <option>Data Analytics</option>
+
+            </select></td>
+          </tr>
+          <tr>
+            <td>Select File</td>
+          </tr>
+          <tr>
+            <td><input type="file"></td>
+          </tr>
+          <tr>
+            <td><label>Description</label></td>
+          </tr>
+          <tr>
+            <td><textarea  rows="8" cols="80" maxlength="100"></textarea></td>
+          </tr>
+          <tr>
+            <td><label>Radio Button</label></td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="red">Male
+            <input type="radio" name="red">Female</td>
+          </tr>
+          <tr>
+            <td><label>Select Minimum Three language</label></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox">C Language <br>
+            <input type="checkbox" >C++ Language <br>
+            <input type="checkbox">Python Language <br>
+            <input type="checkbox">Java Language</td>
+          </tr>
+          <tr>
+            <td><label>Choose your browser</label></td>
+          </tr>
+          <tr>
+            <td><input list="ab">
+            <datalist id="ab">
+              <option value="Edge">
+              <option value="Firebox">
+              <option value="Chrome">
+              <option value="Safari">
+              <option value="Microsoft">
+              <option value="Edge">
+              <option value="Edge">
+
+            </datalist></td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="send to server"></td>
+          </tr>
+
+        </table>
+        </fieldset>
+      </form>
+    </center>
+  </body>
+</html>

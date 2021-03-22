@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script type="text/javascript">
+    function showcheckbox() {
+      var item = "";
+      var sum=0;
+      var refbook = document.getElementById("book");
+      var refpen=document.querySelector("#pen");
+      var refcopy=document.getElementById("copy");
+      if(refbook.checked==true){
+        item="book, ";
+        sum+=parseInt(refbook.value);
+
+      }
+      if(refpen.checked==true){
+        item+="pen, ";
+        sum+=parseInt(refpen.value);
+        //alert(sum);
+
+      }
+      if(refcopy.checked==true){
+        item+="copy";
+        sum+=parseInt(refcopy.value);
+
+      }
+      // document.getElementById("chekres").value=item;
+      // document.getElementById("chekprice").value=sum;
+
+      document.getElementById("chekres").innerHTML=item;
+      document.getElementById("chekprice").innerHTML=sum;
+
+    }
+    function showBranch()
+    {
+      var refcse=document.getElementById("cse");
+      var refme=document.getElementById("me");
+      if(refcse.checked==true)
+      {
+        document.getElementById("ShowBranch").innerHTML=refcse.value;
+
+      }
+      if(refme.checked==true)
+      {
+        document.getElementById("ShowBranch").innerHTML=refme.value;
+      }
+    }
+
+
+
+
+
+
+  </script>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <center>
+    <h3>Radio Button and checkboxes</h3>
+    Select Item: <br>
+    <input type="checkbox" id="book" value="150">Book(price:150)
+    <input type="checkbox" id="pen" value="50">Pen(price:50)
+    <input type="checkbox" id="copy" value="100">Copy(100)
+    <br><br><br>
+    <input type="button" value="Get List" onclick="showcheckbox();">
+    <br> <h3>Books and Price:</h3><br>
+    <!-- Books:<input type="text" id="chekres"> <br>
+    Price:<input type="text" id="chekprice"> -->
+
+
+    <div id="chekres">
+      *
+    </div>
+    <div id="chekprice">
+      *
+    </div>
+    <hr><hr>
+    <h3>Radio Button</h3>
+    <!-- give same name for only one selection -->
+    Select Branch: <input type="radio" name="select" id="cse" value="You are selected Computer Science Engineering">CSE
+    <input type="radio" name="select" id="me" value="You are selected Mechanical Engineering">ME
+    <input type="button" value="Submit" onclick="showBranch();">
+    <div id="ShowBranch">
+
+    </div>
+  </center>
+
+</body>
+
+</html>

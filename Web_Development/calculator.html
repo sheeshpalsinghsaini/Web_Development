@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script type="text/javascript">
+    function dosum() {
+      var a = document.getElementById("A").value;
+      // var b = document.getElementById("B").value;// or use it
+      var b = document.querySelector("#B").value;
+      //run only when both input are valid;
+      var refErrA=document.querySelector("#errA");
+      var refErrB=document.querySelector("#errB");
+      if(refErrA.innerHTML!="Okay" || refErrB.innerHTML!="Okay")
+      {
+        alert("Fill Valid Data");
+        return;
+      }
+
+
+      document.getElementById("result").value = parseFloat(a) + parseFloat(b);
+    }
+
+    function chkA() {
+      var refA = document.querySelector("#A");
+      var refErr = document.querySelector("#errA");
+      var len = refA.value;
+      if (len.length == 0) {
+        refErr.innerHTML = "Fill Value";
+        refErr.style.color = "red";
+        refA.style.backgroundColor="red"
+      } else {
+        if (isNaN(len)) //not a Number
+        {
+          refErr.innerHTML = "Fill Numberic Data";
+          refErr.style.color = "red";
+          refA.style.backgroundColor="red"
+        }
+        else {
+          refErr.innerHTML = "Okay";
+          refErr.style.color = "green";
+          refA.style.backgroundColor="white";
+
+        }
+      }
+
+    }
+
+  function chkB(){
+    var refB=document.querySelector("#B");
+    var refErr=document.querySelector("#errB");
+    var len =refB.value;
+    if(len.length==0){
+      refErr.innerHTML="Fill value";
+      refErr.style.color="red";
+      refB.style.backgroundColor="red";
+
+    }
+    else {
+      if(isNaN(len))//not a Value
+      {
+        refErr.innerHTML="Fill Numeric Data";
+        refErr.style.color="red";
+        refB.style.backgroundColor="red";
+      }
+      else{
+        refErr.innerHTML="Okay";
+        refErr.style.color="green";
+        refB.style.backgroundColor="white";
+      }
+    }
+  }
+
+
+
+  </script>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <center>
+    <form>
+      <table>
+        <tr>
+          <th>
+            <h1>Calculator</h1>
+          </th>
+        </tr>
+        <tr>
+          <td>Enter First Number: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="A" onblur="chkA();"><span id="errA">*</span></td>
+        </tr>
+        <tr>
+          <td>Enter Second Number:&nbsp;&nbsp;<input type="text" id="B" onblur="chkB();"><span id="errB">*</span></td>
+        </tr>
+        <tr>
+          <td>Result:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="result"></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" name="" value="Sum" onclick="dosum();">
+            <input type="button" name="" value="Sub" onclick="dosub();">
+            <input type="button" name="" value="Mult" onclick="domul();">
+            <input type="button" name="" value="Div" onclick="dodiv();">
+            <input type="button" name="" value="Sub">
+            <input type="button" name="" value="Mult">
+            <input type="button" name="" value="Div">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" name="" value="Sum">
+            <input type="button" name="" value="Sub">
+            <input type="button" name="" value="Mult">
+            <input type="button" name="" value="Div">
+            <input type="button" name="" value="Sub">
+            <input type="button" name="" value="Mult">
+            <input type="button" name="" value="Div">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" name="" value="Sum">
+            <input type="button" name="" value="Sub">
+            <input type="button" name="" value="Mult">
+            <input type="button" name="" value="Div">
+            <input type="button" name="" value="Sub">
+            <input type="button" name="" value="Mult">
+            <input type="button" name="" value="Div">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" name="" value="Sum">
+            <input type="button" name="" value="Sub">
+            <input type="button" name="" value="Mult">
+            <input type="button" name="" value="Div">
+            <input type="button" name="" value="Sub">
+            <input type="button" name="" value="Mult">
+            <input type="button" name="" value="Div">
+          </td>
+        </tr>
+      </table>
+
+    </form>
+  </center>
+</body>
+
+</html>

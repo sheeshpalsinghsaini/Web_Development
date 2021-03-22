@@ -1,0 +1,61 @@
+body{
+  background-color: #f0f0f0;
+
+}
+
+#signup{
+  width: 400px;
+  height: 450px;
+  background-color: #98ded9;
+  margin: auto;
+  margin-top: 120px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 1px;
+  /* blur and rounder shadow */
+  padding: 10px;
+}
+
+#signup img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  border: 1px black solid;
+}
+#eye{
+  border: 1px black solid;
+  padding: 1px;
+}
+img:hover{
+  transform: rotate(360deg);
+  transition: ease all 1s;
+}
+img{
+  transition: ease all 1s;
+}
+input[type="text"], input[type="password"]{
+  width: 100%;
+  line-height: 25px;
+  border: 0;
+  border-bottom: 1px black solid;
+  color : black solid;
+  background-color: #98ded9;
+  text-align: center;
+}
+input[type="text"]:focus{
+  background-color: #f0f0f0;
+  border-bottom: 1px red solid;
+}
+#btn{
+  width: 80px;
+  background-color: brown;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom:  10px;
+  margin-top: 50px;
+  border-radius: 20px;
+  border: 0;
+}
+label{
+  color: #aa2b1d;
+}

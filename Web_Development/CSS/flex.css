@@ -1,0 +1,20 @@
+.fex-contaner{
+  width: 500px;
+  height: 500px;
+  background-color: #e36bae;
+  margin: auto;
+  display: flex;
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-wrap== used for wrap the div according to screen size of device */
+  /* flex-flow== is combination of flex-wrap and flex-direction */
+  justify-content: center;
+  align-items: center;
+}
+.child{
+  width: 70px;height: 70px;
+  background-color: #91091e;
+  margin-left: 20px;
+}
